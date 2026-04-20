@@ -1,0 +1,16 @@
+{
+  "$id": "https://autonoma.ai/agent-state-array",
+  "title": "AgentStateArray",
+  "description": "an array of agent states",
+  "type": "object",
+  "properties": {
+    "agentStates": {
+      "description": "the agent states",
+      "type": "array",
+      "items": {
+        "$ref": "agent_state.json"
+      }
+    }
+  },
+  "required": []
+}

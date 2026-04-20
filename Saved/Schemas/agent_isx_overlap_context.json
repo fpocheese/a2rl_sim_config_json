@@ -1,0 +1,53 @@
+{
+  "$id": "https://autonoma.ai/agent-isx-overlap-context",
+  "title": "AgentIsxOverlapContext",
+  "description": "an agent intersection overlap context",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "",
+      "type": "number"
+    },
+    "laneIds": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1
+    },
+    "distanceBack": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1
+    },
+    "selfStartDist": {
+      "description": "",
+      "type": "number"
+    },
+    "selfEndDist": {
+      "description": "",
+      "type": "number"
+    },
+    "otherStartDist": {
+      "description": "",
+      "type": "number"
+    },
+    "otherEndDist": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "type",
+    "laneIds",
+    "distanceBack",
+    "selfStartDist",
+    "selfEndDist",
+    "otherStartDist",
+    "otherEndDist"
+  ]
+}

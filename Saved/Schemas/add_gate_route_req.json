@@ -1,0 +1,28 @@
+{
+  "$id": "https://autonoma.ai/add_gate_route_req",
+  "title": "AddGateRouteReq",
+  "description": "data that describes information about routes to and from gates",
+  "type": "object",
+  "properties": {
+    "gateId": {
+      "description": "connection id of the gate",
+      "type": "number"
+    },
+    "routeId": {
+      "description": "route ID number",
+      "type": "number"
+    },
+    "routeType": {
+      "description": "2: source, 3: sink",
+      "type": "number"
+    },
+    "routePlan": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "required": []
+}

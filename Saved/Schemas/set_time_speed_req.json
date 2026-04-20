@@ -1,0 +1,15 @@
+{
+  "$id": "https://autonoma.ai/set-time-speed",
+  "title": "SetTimeSpeedReq",
+  "description": "request used to change time progression speed multiplier: 0=paused, 1=realtime, 2/4/8/16=accelerated",
+  "type": "object",
+  "properties": {
+    "timeSpeed": {
+      "description": "time progression speed multiplier: 0=paused, 1=realtime, 2/4/8/16=accelerated",
+      "type": "number"
+    }
+  },
+  "required": [
+    "timeSpeed"
+  ]
+}

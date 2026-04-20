@@ -1,0 +1,24 @@
+{
+  "$id": "https://autonoma.ai/agent-isx",
+  "title": "AgentIsx",
+  "description": "an agent intersection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "the id of the intersection",
+      "type": "number"
+    },
+    "intersectionRoutes": {
+      "description": "the routes for this intersection",
+      "type": "array",
+      "items": {
+        "$ref": "agent_isx_route.json"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "id",
+    "intersectionRoutes"
+  ]
+}

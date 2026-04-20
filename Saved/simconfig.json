@@ -1,0 +1,47 @@
+{
+	"interfaces":
+	{
+		"bEnableRos2": true,
+		"bEnableCan": true,
+		"api":
+		{
+			"tickRateHz": 5,
+			"listenAddress": "127.0.0.1",
+			"listenPort": 23001,
+			"webSocketListenPort": 30303
+		},
+		"hmi":
+		{
+			"inputSteeringRatio": 1.7,
+			"forceFeedbackMomentMax": 20.0,
+			"forceFeedbackMomentScaleFactor": 0.1,
+			"bEnableAxisDebugPrints": false
+		}
+	},
+	"jedi":
+	{
+		"bEnableHyperdrive": false,
+		"TimeDilation": 1.0,
+		"FixedSimulationTimestep": 0.002,
+		"bIsLockStepEnabled": false,
+		"bEnablePhysicsRatePublisher": true,
+		"clockTopic": {
+				"streamName": "/clock",
+				"rateHz": 250.0
+			}
+	},
+	"environmentPaths": [
+		"Environments"
+	],
+	"defaultEnvironment": "YasmarinaNorth",
+	"objectTemplatePaths": [
+		"Objects"
+	],
+	"payloadTemplatePaths": [
+		"Payloads"
+	],
+	"bEnableSplitscreen": false,
+	"bDisableAllHuds": false,
+	"bHideAutonomaBranding": false,
+	"bEnableV2VCollision": true
+}

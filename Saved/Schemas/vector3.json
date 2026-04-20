@@ -1,0 +1,25 @@
+{
+  "$id": "https://autonoma.ai/adp-vector3",
+  "title": "Vector3",
+  "description": "a 3D vector",
+  "type": "object",
+  "properties": {
+    "x": {
+      "description": "",
+      "type": "number"
+    },
+    "y": {
+      "description": "",
+      "type": "number"
+    },
+    "z": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "x",
+    "y",
+    "z"
+  ]
+}

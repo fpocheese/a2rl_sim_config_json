@@ -1,0 +1,21 @@
+{
+  "$id": "https://example.com/product.schema.json",
+  "title": "User",
+  "description": "User info",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The ID of the user",
+      "type": "number"
+    },
+    "user_name": {
+      "description": "The name of the user",
+      "type": "string"
+    },
+    "email": {
+      "description": "The email address of the user",
+      "type": "string"
+    }
+  },
+  "required": [ "user_name", "email" ]
+}

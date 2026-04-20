@@ -1,0 +1,48 @@
+{
+	"TypeName": "SimViewTargetIpd",
+	"SpecName": "DefaultCarCams",
+	"Body": {
+		"firstCameraIndex": 1,
+		"Cameras": [
+			{
+				"Name": "Cam0",
+				"OffsetCm": {
+					"X": -900,
+					"Y": 0,
+					"Z": 200
+				},
+				"Rotation": {
+					"Roll": 0,
+					"Pitch": 5,
+					"Yaw": 0
+				}
+			},
+			{
+				"Name": "Cam1",
+				"OffsetCm": {
+					"X": -200,
+					"Y": 300,
+					"Z": 50
+				},
+				"Rotation": {
+					"Roll": 0,
+					"Pitch": 0,
+					"Yaw": -45
+				}
+			},
+			{
+				"Name": "Cam2",
+				"OffsetCm": {
+					"X": -100,
+					"Y": 0,
+					"Z": 2300
+				},
+				"Rotation": {
+					"Roll": 0,
+					"Pitch": -85,
+					"Yaw": 0
+				}
+			}
+		]
+	}
+}

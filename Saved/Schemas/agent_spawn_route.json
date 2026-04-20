@@ -1,0 +1,29 @@
+{
+  "$id": "https://autonoma.ai/agent-spawn-route",
+  "title": "AgentSpawnRoute",
+  "description": "configure the network spanwers",
+  "type": "object",
+  "properties": {
+    "sinkName": {
+      "description": "",
+      "type": "string"
+    },
+    "avgAgentsPerSecond": {
+      "description": "",
+      "type": "number"
+    },
+    "laneConnectionIds": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "sinkName",
+    "avgAgentsPerSecond",
+    "laneConnectionIds"
+  ]
+}

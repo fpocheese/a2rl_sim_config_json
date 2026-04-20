@@ -1,0 +1,12 @@
+{
+	"typeName": "VehicleLaneMonitorIpd",
+	"specName": "DefaultVehicleLaneMonitor",
+	"body": {
+		"laneName": "Default",
+		"laneDetectionWidthCm": 174,
+		"laneDetectionLengthCm": 110,
+		"bPublishLaps": false,
+		"bPublishLateralLanePercent": false,
+		"bTickWithPhysics": true
+	}
+}

@@ -1,0 +1,34 @@
+{
+  "$id": "https://autonoma.ai/agent-isx-route",
+  "title": "AgentIsxRoute",
+  "description": "an agent intersection route",
+  "type": "object",
+  "properties": {
+    "sourceConnectionId": {
+      "description": "",
+      "type": "number"
+    },
+    "sinkConnectionId": {
+      "description": "",
+      "type": "number"
+    },
+    "intersectionRouteSegments": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "agent_isx_route_segment.json"
+      },
+      "minItems": 1
+    },
+    "defaultSignal": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "sourceConnectionId",
+    "sinkConnectionId",
+    "intersectionRouteSegments",
+    "defaultSignal"
+  ]
+}

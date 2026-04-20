@@ -1,0 +1,15 @@
+{
+  "$id": "https://autonoma.ai/reset-object",
+  "title": "DescribeAppRes",
+  "description": "response to a describe app request",
+  "type": "object",
+  "properties": {
+    "appVersion": {
+      "description": "the version of the app",
+      "type": "string"
+    }
+  },
+  "required": [
+    "appVersion"
+  ]
+}

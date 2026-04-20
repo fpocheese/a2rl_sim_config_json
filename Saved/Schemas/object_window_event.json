@@ -1,0 +1,33 @@
+{
+  "$id": "https://autonoma.ai/object-window-event",
+  "title": "ObjectWindowEvent",
+  "description": "event representing a window of time an object was meeting some criteria",
+  "type": "object",
+  "properties": {
+    "objectId": {
+      "description": "the id of the object",
+      "type": "string"
+    },
+    "entryTf": {
+      "description": "the world transform of the object when the window opened",
+      "$ref": "transform.json"
+    },
+    "exitTf": {
+      "description": "the world transform of the object when the window closed",
+      "$ref": "transform.json"
+    },
+    "entryStamp": {
+      "description": "the time in nanoseconds after sim start that the window opened",
+      "type": "number"
+    },
+    "exitStamp": {
+      "description": "the time in nanoseconds after sim start that the windows closed",
+      "type": "number"
+    },
+    "wasTriggeredByEntry": {
+      "description": "true indicates this event was emitted for the start of the window",
+      "type": "bool"
+    }
+  },
+  "required": []
+}

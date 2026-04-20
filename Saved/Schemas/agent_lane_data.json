@@ -1,0 +1,54 @@
+{
+  "$id": "https://autonoma.ai/agent-lane-data",
+  "title": "AgentLaneData",
+  "description": "agent lane data",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "",
+      "type": "number"
+    },
+    "type": {
+      "description": "",
+      "type": "number"
+    },
+    "sourceLaneConnectionId": {
+      "description": "",
+      "type": "number"
+    },
+    "sinkLaneConnectionId": {
+      "description": "",
+      "type": "number"
+    },
+    "speedLimit": {
+      "description": "",
+      "type": "number"
+    },
+    "turnType": {
+      "description": "",
+      "type": "number"
+    },
+    "laneSegmentSplinePoints": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "vector3.json"
+      },
+      "minItems": 1
+    },
+    "passivePriority": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "sourceLaneConnectionId",
+    "sinkLaneConnectionId",
+    "speedLimit",
+    "turnType",
+    "laneSegmentSplinePoints",
+    "passivePriority"
+  ]
+}

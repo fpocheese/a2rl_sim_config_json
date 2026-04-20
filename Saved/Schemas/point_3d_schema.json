@@ -1,0 +1,21 @@
+{
+  "$id": "https://autonoma.ai/point3D",
+  "title": "Point3D",
+  "description": "Represents a point in 3 dimensional space.",
+  "type": "object",
+  "properties": {
+    "x": {
+      "description": "The x coordinate in a 3 dimensional point.",
+      "type": "number"
+    },
+    "y": {
+      "description": "The y coordinate in a 3 dimensional point.",
+      "type": "number"
+    },
+    "z": {
+      "description": "The z coordinate in a 3 dimensional point.",
+      "type": "number"
+    }
+  },
+  "required": [ "x", "y", "z"]
+}

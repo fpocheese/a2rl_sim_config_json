@@ -1,0 +1,13 @@
+{
+  "$id": "https://autonoma.ai/reset-app",
+  "title": "ResetAppReq",
+  "description": "reset a running app",
+  "type": "object",
+  "properties": {
+    "resetType": {
+      "description": "the type of reset",
+      "type": "string"
+    }
+  },
+  "required": []
+}

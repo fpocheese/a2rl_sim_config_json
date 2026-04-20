@@ -1,0 +1,68 @@
+{
+  "$id": "https://autonoma.ai/agent-state",
+  "title": "AgentState",
+  "description": "data that describes the state of an agent in the agent system",
+  "type": "object",
+  "properties": {
+    "agentId": {
+      "description": "the id of the agent",
+      "type": "number"
+    },
+    "agentType": {
+      "description": "",
+      "type": "number"
+    },
+    "laneId": {
+      "description": "",
+      "type": "number"
+    },
+    "laneProgressMeters": {
+      "description": "",
+      "type": "number"
+    },
+    "followDistance": {
+      "description": "",
+      "type": "number"
+    },
+    "velocityTarget": {
+      "description": "",
+      "type": "number"
+    },
+    "mode": {
+      "description": "",
+      "type": "number"
+    },
+    "leadAgentId": {
+      "description": "",
+      "type": "number"
+    },
+    "distanceToLeadAgent": {
+      "description": "",
+      "type": "number"
+    },
+    "agentLength": {
+      "description": "",
+      "type": "number"
+    },
+    "positionX": {
+      "description": "",
+      "type": "number"
+    },
+    "positionY": {
+      "description": "",
+      "type": "number"
+    },
+    "heading": {
+      "description": "",
+      "type": "number"
+    },
+    "pathPlanVertexIds": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "required": []
+}

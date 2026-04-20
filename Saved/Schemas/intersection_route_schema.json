@@ -1,0 +1,31 @@
+{
+  "$id": "https://autonoma.ai/intersecitonRoute",
+  "title": "IntersectionRoute",
+  "description": "Represents the contextual lanes that overlap or intersect an intersection route lane",
+  "type": "object",
+  "properties": {
+    "sourceConnectionId": {
+      "description": "The laneconnection id of the intersection entry point",
+      "type": "number"
+    },
+    "sinkConnectionId": {
+      "description": "The laneconnection id of the intersection exit point",
+      "type": "number"
+    },
+    "intersectionRouteSegments": {
+      "description": "ordered list of route segments to get from source connection to sink connection",
+      "type": "array",
+      "items" : {
+          "$ref": "intersection_route_segment_schema.json"
+      },
+      "minItems" : 1,
+      "maxItems" : 1000
+    },
+    "defaultSignal": {
+      "description": "Default signal for the intersection route.",
+      "type": "number"
+    }
+  },
+  "required": [ "sourceConnectionId", "sinkConnectionId", "intersectionRouteSegments", 
+  "defaultSignal"]
+}

@@ -1,0 +1,29 @@
+{
+  "$id": "https://autonoma.ai/object-interaction-event",
+  "title": "ObjectInteractionEvent",
+  "description": "event generated when an object does something",
+  "type": "object",
+  "properties": {
+    "objectId": {
+      "description": "the id of the first object",
+      "type": "string"
+    },
+    "otherObjectId": {
+      "description": "the id of the seconds object",
+      "type": "string"
+    },
+    "objectTf": {
+      "description": "the world transform of the first object",
+      "$ref": "transform.json"
+    },
+    "otherObjectTf": {
+      "description": "the world transform of the second object",
+      "$ref": "transform.json"
+    },
+    "stamp": {
+      "description": "the time in nanoseconds after sim start that the event happened",
+      "type": "number"
+    }
+  },
+  "required": []
+}

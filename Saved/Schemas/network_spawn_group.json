@@ -1,0 +1,29 @@
+{
+  "$id": "https://autonoma.ai/network-spawn-group",
+  "title": "NetworkSpawnGroup",
+  "description": "set network spawn groups",
+  "type": "object",
+  "properties": {
+    "groupName": {
+      "description": "",
+      "type": "string"
+    },
+    "sources": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sinks": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "groupName"
+  ]
+}

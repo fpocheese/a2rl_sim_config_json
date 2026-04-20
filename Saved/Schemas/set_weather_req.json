@@ -1,0 +1,20 @@
+{
+  "$id": "https://autonoma.ai/set-weather",
+  "title": "SetWeatherReq",
+  "description": "request used to change weather",
+  "type": "object",
+  "properties": {
+    "weather": {
+      "description": "selected weather type",
+      "type": "string"
+    },
+    "intensity": {
+      "description": "the intensity from 0.0 to 1.0 of the weather",
+      "type": "number"
+    }
+  },
+  "required": [
+    "weather",
+    "intensity"
+  ]
+}

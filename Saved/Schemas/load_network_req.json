@@ -1,0 +1,13 @@
+{
+  "$id": "https://autonoma.ai/load-network",
+  "title": "LoadNetworkReq",
+  "description": "request to load a network from a JSON file path",
+  "type": "object",
+  "properties": {
+    "path": {
+      "description": "absolute or relative path to the network JSON file",
+      "type": "string"
+    }
+  },
+  "required": []
+}

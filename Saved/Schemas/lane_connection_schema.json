@@ -1,0 +1,21 @@
+{
+  "$id": "https://autonoma.ai/laneConnection",
+  "title": "LaneConnection",
+  "description": "Represents a lane connection.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The ID of this lane connection.",
+      "type": "number"
+    },
+    "location": {
+      "description": "The 3D location of this connection.",
+      "$ref": "point_3d_schema.json"
+    },
+    "type": {
+      "description": "The type of this lane connection.",
+      "type": "number"
+    }
+  },
+  "required": [ "id", "location", "type"]
+}

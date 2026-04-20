@@ -1,0 +1,38 @@
+{
+  "$id": "https://autonoma.ai/agent-traffic-light-group",
+  "title": "AgentTrafficLightGroup",
+  "description": "a group of traffic lights with timed states",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Group ID",
+      "type": "number"
+    },
+    "lights": {
+      "description": "List of lights with associated lane connections",
+      "type": "array",
+      "items": {
+        "$ref": "agent_traffic_light_connection_ids.json"
+      },
+      "minItems": 1
+    },
+    "lightStates": {
+      "description": "Timed states of the light group",
+      "type": "array",
+      "items": {
+        "$ref": "agent_traffic_light_states.json"
+      },
+      "minItems": 1
+    },
+    "phases": {
+      "description": "Phase groups mapping phase index to lane connection IDs",
+      "$ref": "agent_traffic_light_phase_array.json"
+    }
+  },
+  "required": [
+    "id",
+    "lights",
+    "lightStates",
+    "phases"
+  ]
+}

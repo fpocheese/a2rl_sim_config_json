@@ -1,0 +1,19 @@
+{
+  "$id": "https://autonoma.ai/simple-status-res",
+  "title": "SimpleStatusRes",
+  "description": "response with only a status string",
+  "type": "object",
+  "properties": {
+    "status": {
+      "description": "the response status resulting from whatever occurred",
+      "type": "string"
+    },
+    "code": {
+      "description": "http response code to be passed back out with api response",
+      "type": "number"
+    }
+  },
+  "required": [
+    "status"
+  ]
+}

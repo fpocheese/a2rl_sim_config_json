@@ -1,0 +1,17 @@
+{
+    "$id": "https://example.com/product.schema.json",
+    "title": "AgentStateArray",
+    "description": "Internal agent states array.",
+    "type": "object",
+    "properties": {
+        "agentStates": {
+              "type": "array",
+              "items" : {
+                  "$ref": "agent_state_schema.json"
+              },
+              "minItems" : 1,
+              "maxItems" : 1000
+        }
+    },
+    "required": [ "agentStates" ]
+}

@@ -1,0 +1,21 @@
+{
+  "$id": "https://autonoma.ai/log-msg",
+  "title": "LogMsg",
+  "description": "a simple item for logging some type of message",
+  "type": "object",
+  "properties": {
+    "msg": {
+      "description": "the actual log message",
+      "type": "string"
+    },
+    "time": {
+      "description": "utc time of the event",
+      "type": "string"
+    },
+    "level": {
+      "description": "the log level. eg 0 is info, 1 is warn, 2 err etc",
+      "type": "number"
+    }
+  },
+  "required": []
+}

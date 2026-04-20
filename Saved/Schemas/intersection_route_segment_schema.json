@@ -1,0 +1,44 @@
+{
+  "$id": "https://autonoma.ai/intersecitonRouteSegment",
+  "title": "IntersectionRouteSegment",
+  "description": "Represents the contextual lanes that overlap or intersect an intersection route lane",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The lane id of the route segment",
+      "type": "number"
+    },
+    "distanceAlongTransitRoute": {
+      "description": "The distance along the interseciton transit route that this lane starts at",
+      "type": "number"
+    },
+    "mergeConnections": {
+      "description": "list of other lanes that merge into the route lanes sink node",
+      "type": "array",
+      "items" : {
+          "$ref": "intersection_overlap_context_schema.json"
+      },
+      "minItems" : 0,
+      "maxItems" : 100
+    },
+    "splitConnections": {
+      "description": "list of other lanes that split from the route lanes source node",
+      "type": "array",
+      "items" : {
+          "$ref": "intersection_overlap_context_schema.json"
+      },
+      "minItems" : 0,
+      "maxItems" : 100
+    },
+    "crossConnections": {
+      "description": "list of other lanes are unconnected but intersect with the route lane",
+      "type": "array",
+      "items" : {
+          "$ref": "intersection_overlap_context_schema.json"
+      },
+      "minItems" : 0,
+      "maxItems" : 100
+    }
+  },
+  "required": [ "id", "distanceAlongTransitRoute", "mergeConnections", "splitConnections", "crossConnections"]
+}

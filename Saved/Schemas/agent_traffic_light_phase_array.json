@@ -1,0 +1,16 @@
+{
+  "$id": "https://autonoma.ai/agent-traffic-light-phase-array",
+  "title": "AgentTrafficLightPhaseArray",
+  "description": "Phase groups mapping phase index to lane connection IDs",
+  "type": "object",
+  "properties": {
+    "phaseMap": {
+      "description": "Map of phase index to lane connection ID arrays",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "agent_lane_connection_id_array.json"
+      }
+    }
+  },
+  "required": []
+}

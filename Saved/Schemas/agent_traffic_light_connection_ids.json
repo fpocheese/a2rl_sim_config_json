@@ -1,0 +1,20 @@
+{
+  "$id": "https://autonoma.ai/agent-traffic-light-connection-ids",
+  "title": "AgentTrafficLightConnectionIds",
+  "description": "List of lights with associated lane connections",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Light id",
+      "type": "number"
+    },
+    "laneConnectionId": {
+      "description": "Lane connection id",
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "laneConnectionId"
+  ]
+}

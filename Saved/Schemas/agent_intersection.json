@@ -1,0 +1,20 @@
+{
+  "$id": "https://autonoma.ai/agent-intersection",
+  "title": "AgentIntersection",
+  "description": "an agent intersection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "the id of the intersection",
+      "type": "size_t"
+    },
+    "routes": {
+      "description": "the routes for this intersection",
+      "type": "array",
+      "items": {
+        "type": "agent_intesection_route"
+      }
+    }
+  },
+  "required": []
+}

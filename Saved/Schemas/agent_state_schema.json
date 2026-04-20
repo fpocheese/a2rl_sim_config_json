@@ -1,0 +1,56 @@
+{
+    "$id": "https://example.com/product.schema.json",
+    "title": "AgentState",
+    "description": "Internal agent states.",
+    "type": "object",
+    "properties": {
+        "agentId": {
+            "description": "",
+            "type": "number"
+        },
+        "agentType": {
+            "description": "",
+            "type": "number"
+        },
+        "laneId": {
+            "description": "The time in floating point seconds to step the server.",
+            "type": "number"
+        },
+        "laneProgressMeters": {
+            "description": "",
+            "type": "number"
+        },
+        "followDistance": {
+            "description": "",
+            "type": "number"
+        },
+        "velocityTarget": {
+            "description": "",
+            "type": "number"
+        },
+        "mode": {
+            "description": "",
+            "type": "number"
+        },
+        "leadAgentId": {
+            "description": "",
+            "type": "number"
+        },
+        "distanceToLeadAgent": {
+            "description": "",
+            "type": "number"
+        },
+        "agentLength": {
+            "description": "",
+            "type": "number"
+        },
+        "debugData": {
+            "description": "",
+            "$ref": "agent_debug_data_schema.json"
+        }
+    },
+    "required": [ "agentId", "agentType", "laneId", "laneProgressMeters", "followDistance",
+        "velocityTarget", "mode", "leadAgentId", "distanceToLeadAgent",
+        "agentLength"
+    ]
+}

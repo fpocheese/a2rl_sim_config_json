@@ -1,0 +1,15 @@
+{
+  "$id": "https://autonoma.ai/set-time-of-day",
+  "title": "SetTimeOfDayReq",
+  "description": "request used to change time of day",
+  "type": "object",
+  "properties": {
+    "timeOfDay": {
+      "description": "selected time of day",
+      "type": "number"
+    }
+  },
+  "required": [
+    "timeOfDay"
+  ]
+}

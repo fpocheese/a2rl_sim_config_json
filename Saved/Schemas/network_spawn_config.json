@@ -1,0 +1,64 @@
+{
+  "$id": "https://autonoma.ai/network-spawn-config",
+  "title": "NetworkSpawnConfig",
+  "description": "configure the network spanwers",
+  "type": "object",
+  "properties": {
+    "sourceId": {
+      "description": "",
+      "type": "number"
+    },
+    "spawnRoutes": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "agent_spawn_route.json"
+      },
+      "minItems": 1
+    },
+    "sourceName": {
+      "description": "",
+      "type": "string"
+    },
+    "routeType": {
+      "description": "",
+      "type": "number"
+    },
+    "enabledPeriodMean": {
+      "description": "",
+      "type": "number"
+    },
+    "enabledPeriodStd": {
+      "description": "",
+      "type": "number"
+    },
+    "disabledPeriodMean": {
+      "description": "",
+      "type": "number"
+    },
+    "disabledPeriodStd": {
+      "description": "",
+      "type": "number"
+    },
+    "spawnUniformity": {
+      "description": "",
+      "type": "number"
+    },
+    "includeDisabledPeriodInAverage": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "sourceId",
+    "spawnRoutes",
+    "sourceName",
+    "routeType",
+    "enabledPeriodMean",
+    "enabledPeriodStd",
+    "disabledPeriodMean",
+    "disabledPeriodStd",
+    "spawnUniformity",
+    "includeDisabledPeriodInAverage"
+  ]
+}

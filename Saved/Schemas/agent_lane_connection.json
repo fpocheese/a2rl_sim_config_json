@@ -1,0 +1,30 @@
+{
+  "$id": "https://autonoma.ai/agent-lane-connection",
+  "title": "AgentLaneConnection",
+  "description": "an agent lane connection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "",
+      "type": "number"
+    },
+    "type": {
+      "description": "",
+      "type": "number"
+    },
+    "location": {
+      "description": "",
+      "$ref": "vector3.json"
+    },
+    "direction": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "location",
+    "direction"
+  ]
+}

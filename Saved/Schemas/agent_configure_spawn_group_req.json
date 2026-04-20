@@ -1,0 +1,20 @@
+{
+  "$id": "https://autonoma.ai/agent-configure-spawn-group-req",
+  "title": "AgentConfigureSpawnGroupReq",
+  "description": "configures an agent spawner",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "the name of the spawner to configure",
+      "type": "string"
+    },
+    "rate": {
+      "description": "the new rate in agents per second to spawn",
+      "type": "number"
+    }
+  },
+  "required": [
+    "name",
+    "rate"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+    "$id": "https://example.com/product.schema.json",
+    "title": "AgentDebugData",
+    "description": "Agent Debug Data",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "",
+            "type": "number"
+        },
+        "laneId": {
+            "description": "",
+            "type": "number"
+        },
+        "type": {
+            "description": "",
+            "type": "number"
+        },
+        "label": {
+            "description": "The time in floating point seconds to step the server.",
+            "type": "string"
+        },
+        "laneProgressMeters": {
+            "description": "",
+            "type": "number"
+        },
+        "velocity": {
+            "description": "",
+            "type": "number"
+        }
+    },
+    "required": [ "id", "laneId", "type", "label", "laneProgressMeters",
+        "velocity"
+    ]
+}

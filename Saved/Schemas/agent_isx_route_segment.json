@@ -1,0 +1,47 @@
+{
+  "$id": "https://autonoma.ai/agent-isx-route-segment",
+  "title": "AgentIsxRouteSegment",
+  "description": "an agent intersection route segment",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "",
+      "type": "number"
+    },
+    "distanceAlongTransitRoute": {
+      "description": "",
+      "type": "number"
+    },
+    "mergeConnections": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "agent_isx_overlap_context.json"
+      },
+      "minItems": 0
+    },
+    "splitConnections": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "agent_isx_overlap_context.json"
+      },
+      "minItems": 0
+    },
+    "crossConnections": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "agent_isx_overlap_context.json"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "id",
+    "distanceAlongTransitRoute",
+    "mergeConnections",
+    "splitConnections",
+    "crossConnections"
+  ]
+}

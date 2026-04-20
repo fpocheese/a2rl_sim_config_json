@@ -1,0 +1,30 @@
+{
+  "$id": "https://autonoma.ai/adp-vector4",
+  "title": "Vector4",
+  "description": "a 4D vector",
+  "type": "object",
+  "properties": {
+    "x": {
+      "description": "",
+      "type": "number"
+    },
+    "y": {
+      "description": "",
+      "type": "number"
+    },
+    "z": {
+      "description": "",
+      "type": "number"
+    },
+    "w": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "x",
+    "y",
+    "z",
+    "w"
+  ]
+}

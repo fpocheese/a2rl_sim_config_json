@@ -1,0 +1,8 @@
+{
+  "$id": "https://autonoma.ai/logmsg",
+  "title": "AgentLogMsg",
+  "description": "a log msg specific for the agent system",
+  "type": "object",
+  "properties": {},
+  "required": []
+}

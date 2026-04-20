@@ -1,0 +1,13 @@
+{
+  "$id": "https://example.com/product.schema.json",
+  "title": "SpawnNPC",
+  "description": "Request to spawn an NPC in the simulator.",
+  "type": "object",
+  "properties": {
+    "deltaTimeSeconds": {
+      "description": "The time in floating point seconds to step the server.",
+      "type": "number"
+    }
+  },
+  "required": [ "deltaTimeSeconds"]
+}

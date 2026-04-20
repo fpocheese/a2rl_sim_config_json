@@ -1,0 +1,22 @@
+{
+  "$id": "https://autonoma.ai/interseciton",
+  "title": "Intersection",
+  "description": "Describes an intersetion and the routing context to transit",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique id of the intersection",
+      "type": "number"
+    },
+    "intersectionRoutes": {
+      "description": "ordered list of possible transit routes through the intersection",
+      "type": "array",
+      "items" : {
+          "$ref": "intersection_route_schema.json"
+      },
+      "minItems" : 1,
+      "maxItems" : 1000
+    }
+  },
+  "required": [ "id", "intersectionRoutes"]
+}

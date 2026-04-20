@@ -1,0 +1,15 @@
+{
+  "$id": "https://autonoma.ai/dummy-item",
+  "title": "DummyItem",
+  "description": "a fake item for testing",
+  "type": "object",
+  "properties": {
+    "myString": {
+      "description": "a string",
+      "type": "string"
+    }
+  },
+  "required": [
+    "myString"
+  ]
+}

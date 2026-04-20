@@ -1,0 +1,41 @@
+{
+  "$id": "https://autonoma.ai/schedule_event_req",
+  "title": "AirportScheduleEvent",
+  "description": "data that describes that describes and event in the plane scheduled",
+  "type": "object",
+  "properties": {
+    "spawnTime": {
+      "description": "time after start for the event to occur",
+      "type": "number"
+    },
+    "gateId": {
+      "description": "airport gate involved in the event",
+      "type": "number"
+    },
+    "arrivalRouteId": {
+      "description": "route for the event",
+      "type": "number"
+    },
+    "departureRouteId": {
+      "description": "route for the event",
+      "type": "number"
+    },
+    "gateWaitTime": {
+      "description": "if route to gate, time to wait at gate",
+      "type": "number"
+    },
+    "repeat": {
+      "description": "whether event should repeat",
+      "type": "number"
+    },
+    "repeatTime": {
+      "description": "how often to repeat if true",
+      "type": "number"
+    }
+  },
+  "required": [
+    "spawnTime",
+    "gateId",
+    "arrivalRouteId"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "mean_points_per_cycle": 913.7,
+  "std_points_per_cycle": 160.0,
+  "min_points_per_cycle": 500,
+  "max_points_per_cycle": 1640,
+  "min_snr_threshold_db": 12.0,
+  "azimuth_min_deg": -90.0,
+  "azimuth_max_deg": 90.0,
+  "elevation_min_deg": -18.0,
+  "elevation_max_deg": 18.0,
+  "azimuth_bins": 180,
+  "elevation_bins": 36,
+  "range_max_m": 400,
+  "coordinate_convention": "y_forward",
+  "pool_size": 64,
+  "reference_range_band_m": [
+    50.0,
+    100.0
+  ],
+  "peak_antenna_snr_db": 35.5,
+  "source_mcap": "20240420_multivehicle_splitted_0.mcap",
+  "source_topic": "/sensor/radar_front/points",
+  "source_messages": 2000
+}

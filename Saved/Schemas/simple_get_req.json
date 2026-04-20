@@ -1,0 +1,8 @@
+{
+  "$id": "https://autonoma.ai/simple-get-req",
+  "title": "SimpleGetReq",
+  "description": "request with minimal information",
+  "type": "object",
+  "properties": {},
+  "required": []
+}

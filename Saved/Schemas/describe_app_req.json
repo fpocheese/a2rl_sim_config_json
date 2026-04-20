@@ -1,0 +1,23 @@
+{
+  "$id": "https://autonoma.ai/reset-object",
+  "title": "DescribeAppReq",
+  "description": "request a running app to describe itself\n, for example, its version, when it was started, etc",
+  "type": "object",
+  "properties": {
+    "isVerbose": {
+      "description": "if true, return more verbose information\nfor some apps this will have no effect",
+      "type": "bool"
+    },
+    "returnVersionOnly": {
+      "description": "if true, return only the version of the app",
+      "type": "bool"
+    },
+    "versionFormat": {
+      "description": "specify alternative desired version format",
+      "type": "string"
+    }
+  },
+  "required": [
+    "isVerbose"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$id": "https://example.com/product.schema.json",
+  "title": "SpawnAgent",
+  "description": "Request to spawn an NPC in the simulator.",
+  "type": "object",
+  "properties": {
+    "agentType": {
+      "description": "The type of agent to spawn",
+      "type": "number"
+    },
+    "typeId": {
+      "description": "Type ID of the agent to spawn.",
+      "type": "string"
+    },
+    "laneId": {
+      "description": "Id of the lane to spawn the agent on.",
+      "type": "number"
+    },
+    "speedBiasMph": {
+      "description": "Bias of the agent to drive over/under.",
+      "type": "number"
+    },
+    "followDistanceMeters": {
+      "description": "Desired follow distance parameter of the agent.",
+      "type": "number"
+    },
+    "lengthMeters": {
+      "description": "Length of the agent in meters.",
+      "type": "number"
+    },
+    "startVelocityMetersSecond": {
+      "description": "Starting velocity in meters per second.",
+      "type": "number"
+    },
+    "routePlan": {
+      "description": "The planned route of the agent in vertex IDs.",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 1000
+    }
+  },
+  "required": [ "typeId", "laneId", "followDistanceMeters", "lengthMeters", "startVelocityMetersSecond", "routePlan"]
+}

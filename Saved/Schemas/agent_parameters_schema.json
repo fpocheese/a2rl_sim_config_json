@@ -1,0 +1,39 @@
+{
+    "$id": "https://example.com/product.schema.json",
+    "title": "AgentParameters",
+    "description": "Parameters for an agent.",
+    "type": "object",
+    "properties": {
+        "typeId": {
+            "description": "",
+            "type": "string"
+        },
+        "frontLength": {
+            "description": "Front Length of the agent body.",
+            "type": "number"
+        },
+        "rearLength": {
+            "description": "Rear length of the agent body.",
+            "type": "number"
+        },
+        "width": {
+            "description": "Width of the agent body.",
+            "type": "number"
+        },
+        "rearAxelDistance": {
+            "description": "",
+            "type": "number"
+        },
+        "frontAxelDistance": {
+            "description": "",
+            "type": "number"
+        },
+        "tireRadius": {
+            "description": "",
+            "type": "number"
+        }
+    },
+    "required": [ "typeId", "frontLength", "rearLength", "width",
+        "rearAxelDistance", "frontAxelDistance", "tireRadius"
+    ]
+}

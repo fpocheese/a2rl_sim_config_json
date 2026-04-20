@@ -1,0 +1,169 @@
+{
+	"typeName": "WheeledVehicleInitializer",
+	"specName": "DefaultWheeledVehicleParams",
+	"body": {
+		"mass": 760,
+		"centerOfMass": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"inertia": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"steering": {
+			"maxAngle": 24,
+			"ratio": 1,
+			"delay": 0,
+			"delaySeconds": 0,
+			"bandwidth": 1,
+			"rate": 1,
+			"bIsPhysicalActuator": false
+		},
+		"powertrain": {
+			"numGears": 6,
+			"finalGearRatio": 2.818,
+			"gearRatios": [ 3.083, 2.286, 1.824, 1.421, 1.19, 1.036 ],
+			"enginePoly": [ -2.7930000875292255e-15, 6.4570002122898984e-11, -5.6599998288220377e-07, 0.0023010000586509705, -4.1529998779296875, 2835 ],
+			"throttleBandwidth": 2,
+			"throttleRate": 50,
+			"torqueRate": 500,
+			"throttleMapInput": [
+				0,
+				0.33000001311302185,
+				0.6600000262260437,
+				1
+			],
+			"throttleMapOutput": [
+				0,
+				0.5,
+				0.80000001192092896,
+				1
+			],
+			"engineRpmMax": 7500,
+			"engineRpmMin": 2350,
+			"engineRpmNoise": 10,
+			"engineFrictionTorque": 30,
+			"engineInertia": 0.20000000298023224,
+			"frontDifferentialDamping": 0,
+			"rearDifferentialDamping": 5,
+			"bHasRearSolidAxel": false
+		},
+		"brake": {
+			"delay": 0,
+			"delaySeconds": 0,
+			"maxKpa": 100,
+			"kpaToNm": 20,
+			"frontToRearRatio": 0.44999998807907104,
+			"bandwidth": 20,
+			"rate": 6000
+		},
+		"suspension": {
+			"kArbFront": 1277262,
+			"kArbRear": 287433,
+			"kSpring": 107552,
+			"cDamper": 8000,
+			"lSpring": 0.30000001192092896,
+			"coilBindLength": 0.0099999997764825821
+		},
+		"frontTire": {
+			"fzNominal": 2079.719970703125,
+			"dy": 1.9744999408721924,
+			"dy2": -0.47870001196861267,
+			"cy": 1.5997999906539917,
+			"syPeak": 0.14000000059604645,
+			"relaxLenY": 0.10000000149011612,
+			"dx": 2.2344999313354492,
+			"dx2": -0.25554001331329346,
+			"cx": 1.6144000291824341,
+			"sxPeak": 0.12960000336170197,
+			"relaxLenX": 0.10000000149011612,
+			"rollResForce": 60,
+			"wheelInertia": 2,
+			"tireRadius": 0.31000000238418579,
+			"p": [ 0.0002000000474974513, 4.9999997473787516e-05, 9.9999997473787516e-05, 9.9999997473787516e-06, 0.0012000000474974513, 1.2000000476837158, 0.00030000001424923539 ],
+			"mt": 10,
+			"ct": 3,
+			"ht": 12,
+			"acp": 0.0099999997764825821,
+			"thermalFrictionMapInput": [
+				0,
+				30,
+				70,
+				100,
+				130
+			],
+			"thermalFrictionMapOutput": [
+				0.80000001192092896,
+				0.89999997615814209,
+				1,
+				1,
+				0.80000001192092896
+			]
+		},
+		"rearTire": {
+			"fzNominal": 2079.719970703125,
+			"dy": 1.9744999408721924,
+			"dy2": -0.47870001196861267,
+			"cy": 1.5997999906539917,
+			"syPeak": 0.14000000059604645,
+			"relaxLenY": 0.10000000149011612,
+			"dx": 2.2344999313354492,
+			"dx2": -0.25554001331329346,
+			"cx": 1.6144000291824341,
+			"sxPeak": 0.12960000336170197,
+			"relaxLenX": 0.10000000149011612,
+			"rollResForce": 60,
+			"wheelInertia": 2,
+			"tireRadius": 0.31000000238418579,
+			"p": [ 0.0000100000474974513, 1.9999997473787516e-05, 9.9999997473787516e-05, 9.9999997473787516e-06, 0.0012000000474974513, 1.2000000476837158, 0.00030000001424923539 ],
+			"mt": 10,
+			"ct": 3,
+			"ht": 12,
+			"acp": 0.0099999997764825821,
+			"thermalFrictionMapInput": [
+				0,
+				30,
+				70,
+				100,
+				130
+			],
+			"thermalFrictionMapOutput": [
+				0.80000001192092896,
+				0.89999997615814209,
+				1,
+				1,
+				0.80000001192092896
+			]
+		},
+		"aero":
+		{
+			"frontalArea": 1.0,
+			"frontDownforceCoefficient": 1.683,
+			"rearDownforceCoefficient": 2.227,
+			"frontDownforcePosition":
+			{
+				"x": 1.7332808971405029,
+				"y": 0,
+				"z": 0
+			},
+			"rearDownforcePosition": {
+				"x": -1.3817191123962402,
+				"y": 0,
+				"z": 0
+			},
+			"cd": 1.194,
+			"dragForcePosition":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"airDensity": 0.6115
+		},
+		"bUseTireThermalModel": true,
+		"bPhysicalBreakActuator": true
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "$id": "https://autonoma.ai/object-event",
+  "title": "ObjectEvent",
+  "description": "event generated when an object does something",
+  "type": "object",
+  "properties": {
+    "objectId": {
+      "description": "the id of the object",
+      "type": "string"
+    }
+  },
+  "required": []
+}

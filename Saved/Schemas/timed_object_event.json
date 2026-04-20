@@ -1,0 +1,21 @@
+{
+  "$id": "https://autonoma.ai/simple-status-res",
+  "title": "TimedObjectEvent",
+  "description": "event generated when an object does something on the clock",
+  "type": "object",
+  "properties": {
+    "objectId": {
+      "description": "the id of the object completing the thing",
+      "type": "string"
+    },
+    "time": {
+      "description": "the time taken to complete the thing",
+      "type": "number"
+    },
+    "count": {
+      "description": "the total number of completed things this",
+      "type": "number"
+    }
+  },
+  "required": []
+}

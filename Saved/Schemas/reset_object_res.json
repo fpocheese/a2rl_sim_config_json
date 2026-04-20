@@ -1,0 +1,15 @@
+{
+  "$id": "https://autonoma.ai/reset-object",
+  "title": "ResetObjectRes",
+  "description": "response resulting from reset object request",
+  "type": "object",
+  "properties": {
+    "objectId": {
+      "description": "the ID of the object that was reset",
+      "type": "string"
+    }
+  },
+  "required": [
+    "objectId"
+  ]
+}

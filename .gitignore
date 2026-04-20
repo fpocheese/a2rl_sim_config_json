@@ -1,0 +1,27 @@
+# 排除大型二进制文件和引擎资源
+Binaries/
+Content/
+Intermediate/
+Plugins/
+Samples/
+
+# 排除崩溃日志和运行时日志
+Saved/Crashes/
+Saved/Logs/
+
+# 排除运行时生成的配置
+Saved/Config/CrashReportClient/
+
+# 排除大型二进制数据文件
+Saved/LidarScanPatterns/**/*.bin
+Saved/RadarModel/*.npy
+Saved/Environments/*/Data/
+
+# 排除 NPC 回放二进制文件（无扩展名的是二进制）
+Saved/NPC/yas_qg_left
+Saved/NPC/yas_qg_middle
+Saved/NPC/yas_qg_right
+Saved/NPC/north64_realbound
+Saved/NPC/npc_70s
+Saved/NPC/test_*
+Saved/NPC/YYJ01

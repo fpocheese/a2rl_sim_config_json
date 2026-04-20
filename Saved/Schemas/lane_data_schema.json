@@ -1,0 +1,48 @@
+{
+  "$id": "https://autonoma.ai/laneData",
+  "title": "LaneData",
+  "description": "Represents a lane connection.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The ID of this lane.",
+      "type": "number"
+    },
+    "type": {
+      "description": "The type of this lane.",
+      "type": "number"
+    },
+    "sourceLaneConnectionId": {
+      "description": "The ID of the source lane connection vertex.",
+      "type": "number"
+    },
+    "sinkLaneConnectionId": {
+      "description": "The ID of the sink lane connection vertex.",
+      "type": "number"
+    },
+    "speedLimit": {
+      "description": "The speed limit of the lane.",
+      "type": "number"
+    },
+    "laneSegmentSplinePoints": {
+      "description": "Array of x,y,z points describing this lane's segment.",
+      "type": "array",
+      "items": {
+        "$ref": "point_3d_schema.json"
+      },
+      "minItems": 5,
+      "maxItems": 1000
+    },
+    "turnType": {
+      "description": "",
+      "type": "number"
+    },
+    "passivePriority": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [ "id", "type", "sourceLaneConnectionId", 
+      "sinkLaneConnectionId", "speedLimit", "laneSegmentSplinePoints",
+      "turnType", "passivePriority"]
+}

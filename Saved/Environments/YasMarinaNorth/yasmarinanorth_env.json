@@ -1,0 +1,447 @@
+{
+	"name": "YasMarinaNorth",
+	"levelName": "YasMarinaNorth_DemoLevel",
+	"originLatitude": 24.4710399,
+	"originLongitude": 54.605548,
+	"originAltitude": -29.96,
+	"defaultLodLevel": 0,
+	"pointSequenceFiles": [
+		{
+			"name": "DefaultRoute",
+			"cooridnateSystem": "NED",
+			"lapIndex": 0,
+			"xMapping": "x",
+			"xScaling": 1,
+			"xOffset": -284.0,
+			"yMapping": "y",
+			"yScaling": 1,
+			"yOffset": -258.0,
+			"zMapping": "z",
+			"zScaling": 1,
+			"dataFileFormat": "csv",
+			"dataFilePath": "Environments/YasMarinaNorth/Data/yasnorth_center.csv"
+		},
+		{
+			"name": "TbsLeft",
+			"cooridnateSystem": "NED",
+			"lapIndex": 0,
+			"xMapping": "x",
+			"xScaling": 1,
+			"xOffset": -284.0,
+			"yMapping": "y",
+			"yScaling": 1,
+			"yOffset": -258.0,
+			"zMapping": "z",
+			"zScaling": 1,
+			"dataFileFormat": "csv",
+			"dataFilePath": "Environments/YasMarinaNorth/Data/yasnorth_tbs_left.csv"
+		},
+		{
+			"name": "TbsRight",
+			"cooridnateSystem": "NED",
+			"lapIndex": 0,
+			"xMapping": "x",
+			"xScaling": 1,
+			"xOffset": -284.0,
+			"yMapping": "y",
+			"yScaling": 1,
+			"yOffset": -258.0,
+			"zMapping": "z",
+			"zScaling": 1,
+			"dataFileFormat": "csv",
+			"dataFilePath": "Environments/YasMarinaNorth/Data/yasnorth_tbs_right.csv",
+			"sections": [
+				{
+					"name": "Sector0",
+					"startPercent": 0.0,
+					"stopPercent": 0.393,
+					"subSections": [
+						{
+							"name": "MiniSector0",
+							"startPercent": 0.0,
+							"stopPercent": 0.09
+						},
+						{
+							"name": "MiniSector1",
+							"startPercent": 0.09,
+							"stopPercent": 0.393
+						}
+					]
+				},
+				{
+					"name": "Sector1",
+					"startPercent": 0.393,
+					"stopPercent": 0.713,
+					"subSections": [
+						{
+							"name": "MiniSector2",
+							"startPercent": 0.393,
+							"stopPercent": 0.452
+						},
+						{
+							"name": "MiniSector3",
+							"startPercent": 0.452,
+							"stopPercent": 0.713
+						}
+					]
+				},
+				{
+					"name": "Sector2",
+					"startPercent": 0.713,
+					"stopPercent": 1.0,
+					"subSections": [
+						{
+							"name": "MiniSector4",
+							"startPercent": 0.713,
+							"stopPercent": 0.757
+						},
+						{
+							"name": "MiniSector5",
+							"startPercent": 0.757,
+							"stopPercent": 0.895
+						},
+						{
+							"name": "MiniSector6",
+							"startPercent": 0.895,
+							"stopPercent": 1.0
+						}
+					]
+				}
+			]
+		}
+	],
+	"replayFiles": [
+	],
+	"lanes": [
+		{
+			"name": "Default",
+			"outerBoundsName": "TbsLeft",
+			"innerBoundsName": "TbsRight"
+		}
+	],
+	"bAutoRecordVehicles": false,
+	"cameraLandmarks": [
+		{ "x": -10814, "y": -2540, "z": 4270 },
+		{ "x": -8555, "y": 28020, "z": 2720 },
+		{ "x": 2375, "y": 27600, "z": 3220 },
+		{ "x": 23055, "y": 11760, "z": 3740 },
+		{ "x": 27240, "y": 160, "z": 4000 },
+		{ "x": 44750, "y": 6250, "z": 3550 },
+		{ "x": 66160, "y": 4870, "z": 3270 },
+		{ "x": 81015, "y": -3110, "z": 3050 },
+		{ "x": 66460, "y": -8350, "z": 3120 },
+		{ "x": 28820, "y": -23460, "z": 3150 },
+		{ "x": 6180, "y": -28540, "z": 3120 },
+		{ "x": -16570, "y": -38350, "z": 3000 },
+		{ "x": -31970, "y": -39090, "z": 3000 },
+		{ "x": -18000, "y": -26640, "z": 2790 }
+	],
+	"bEnableAutoSpawnobjects": true,
+	"autoSpawnObjects": [
+		{
+			"bShouldSpawn": true,
+			"objectType": "Eav24",
+			"bSpawnAtLandmark": true,
+			"spawnLandmarkName": "MvStart0"
+		},
+		{
+			"bShouldSpawn": true,
+			"objectType": "Eav24",
+			"objectSpec": "eav24_mv1",
+			"bSpawnAtLandmark": true,
+			"spawnLandmarkName": "MvStart0",
+			"bOverrideObjectName": true,
+			"objectNameOverride": "car0"
+		}
+	],
+	"landmarks": [
+		{
+			"name": "DefaultCameraView",
+			"location": {
+				"x": -10100.0,
+				"y": -2990.0,
+				"z": 3300.0
+			},
+			"yaw": 120.0
+		},
+		{
+			"name": "Start",
+			"location": {
+				"x": -12100.0,
+				"y": -2990.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart0",
+			"location": {
+				"x": -12620.0,
+				"y": -3400.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart1",
+			"location": {
+				"x": -11985.0,
+				"y": -4320.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart2",
+			"location": {
+				"x": -12850.0,
+				"y": -5000.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart3",
+			"location": {
+				"x": -12205.0,
+				"y": -5925.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart4",
+			"location": {
+				"x": -13080.0,
+				"y": -6600.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart5",
+			"location": {
+				"x": -12425.0,
+				"y": -7530,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart6",
+			"location": {
+				"x": -13310.0,
+				"y": -8200.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart7",
+			"location": {
+				"x": -12645.0,
+				"y": -9135.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart8",
+			"location": {
+				"x": -13540.0,
+				"y": -9800.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart9",
+			"location": {
+				"x": -12865.0,
+				"y": -10740.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart10",
+			"location": {
+				"x": -13770.0,
+				"y": -11400.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart11",
+			"location": {
+				"x": -13085.0,
+				"y": -12345.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart12",
+			"location": {
+				"x": -12400.0,
+				"y": -13290.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart13",
+			"location": {
+				"x": -11715.0,
+				"y": -14235.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "MvStart14",
+			"location": {
+				"x": -11030.0,
+				"y": -15180.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+			{
+			"name": "MvStart15",
+			"location": {
+				"x": -10345.0,
+				"y": -16125.0,
+				"z": 2570
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "Sector1",
+			"location": {
+				"x": 64000.0,
+				"y": 4200.0,
+				"z": 2900.0
+			},
+			"yaw": 352.0
+		},
+		{
+			"name": "Sector2",
+			"location": {
+				"x": 18405.0,
+				"y": -25820.0,
+				"z": 2810.0
+			},
+			"yaw": 199.0
+		},
+		{
+			"name": "PitsSlot1",
+			"location": {
+				"x": -12250.0,
+				"y": 6810.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot2",
+			"location": {
+				"x": -12475.0,
+				"y": 5210.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot3",
+			"location": {
+				"x": -12700.0,
+				"y": 3610.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot4",
+			"location": {
+				"x": -12925.0,
+				"y": 2010.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot5",
+			"location": {
+				"x": -13150.0,
+				"y": 410.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot6",
+			"location": {
+				"x": -13375.0,
+				"y": -1190.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot7",
+			"location": {
+				"x": -13600.0,
+				"y": -2790.0,
+				"z": 2570.0
+			},
+			"yaw": 80
+		},
+		{
+			"name": "PitsSlot8",
+			"location": {
+				"x": -13825.0,
+				"y": -4390.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot9",
+			"location": {
+				"x": -14050.0,
+				"y": -5990.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot10",
+			"location": {
+				"x": -14275.0,
+				"y": -7590.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot11",
+			"location": {
+				"x": -14500.0,
+				"y": -9190.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		},
+		{
+			"name": "PitsSlot12",
+			"location": {
+				"x": -14725.0,
+				"y": -10790.0,
+				"z": 2570.0
+			},
+			"yaw": 80.0
+		}
+	]
+}

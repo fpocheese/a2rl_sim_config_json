@@ -1,0 +1,16 @@
+{
+  "$id": "https://autonoma.ai/light-state-array",
+  "title": "AgentTrafficLightStateArray",
+  "description": "an array of light states",
+  "type": "object",
+  "properties": {
+    "agentlightStates": {
+      "description": "the light states",
+      "type": "array",
+      "items": {
+        "$ref": "agent_traffic_light_ids_states.json"
+      }
+    }
+  },
+  "required": []
+}

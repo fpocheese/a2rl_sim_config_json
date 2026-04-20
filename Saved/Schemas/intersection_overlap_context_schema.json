@@ -1,0 +1,46 @@
+{
+  "$id": "https://autonoma.ai/IntersectionOverlapContext",
+  "title": "IntersectionOverlapContext",
+  "description": "Represents the context for an intersection overlap.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "Type of this merge connection context.",
+      "type": "number"
+    },
+    "laneIds": {
+      "description": "The ids of the overlap lane and preceeding lookback lanes before the overlap",
+      "type": "array",
+      "items": {
+          "type": "number"
+      },
+      "minItems": 1
+    },
+    "distanceBack": {
+      "description": "The distance back from the overlap initiator when multiple lane segments are in the lookback",
+      "type": "array",
+      "items": {
+          "type": "number"
+      },
+      "minItems": 1
+    },
+    "selfStartDist": {
+      "description": "Starting distance along route lane that the overlap occurs",
+      "type": "number"
+    },
+    "selfEndDist": {
+      "description": "distance along route lane that the overlap ends",
+      "type": "number"
+    },
+    "otherStartDist": {
+      "description": "Starting distance along context overlap lane that the overlap starts",
+      "type": "number"
+    },
+    "otherEndDist": {
+      "description": "Starting distance along context overlap lane that the overlap ends",
+      "type": "number"
+    }
+  },
+  "required": [ "type", "laneIds", "distanceBack", "selfStartDist",
+  "selfEndDist", "otherStartDist", "otherEndDist"]
+}

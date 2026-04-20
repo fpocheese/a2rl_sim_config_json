@@ -1,0 +1,49 @@
+{
+  "$id": "https://autonoma.ai/spawn-agent",
+  "title": "SpawnAgentReq",
+  "description": "request an agent to be spawned",
+  "type": "object",
+  "properties": {
+    "agentType": {
+      "description": "",
+      "type": "number"
+    },
+    "typeId": {
+      "description": "",
+      "type": "string"
+    },
+    "speedBiasMph": {
+      "description": "",
+      "type": "number"
+    },
+    "followDistanceMeters": {
+      "description": "",
+      "type": "number"
+    },
+    "lengthMeters": {
+      "description": "",
+      "type": "number"
+    },
+    "startVelocityMetersSecond": {
+      "description": "",
+      "type": "number"
+    },
+    "routePlan": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "agentType",
+    "typeId",
+    "speedBiasMph",
+    "followDistanceMeters",
+    "lengthMeters",
+    "startVelocityMetersSecond",
+    "routePlan"
+  ]
+}

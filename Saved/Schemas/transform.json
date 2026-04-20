@@ -1,0 +1,17 @@
+{
+  "$id": "https://autonoma.ai/adp-transform",
+  "title": "Transform",
+  "description": "a 3D transform with position and rotation",
+  "type": "object",
+  "properties": {
+    "location": {
+      "description": "the position",
+      "$ref": "vector3.json"
+    },
+    "rotation": {
+      "description": "the xyzw quaternion of rotation",
+      "$ref": "vector4.json"
+    }
+  },
+  "required": []
+}

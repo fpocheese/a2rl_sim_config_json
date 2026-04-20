@@ -1,0 +1,15 @@
+{
+  "$id": "https://autonoma.ai/step-agent-server",
+  "title": "StepAgentServerReq",
+  "description": "request that the agent server step forward in time",
+  "type": "object",
+  "properties": {
+    "deltaTimeSeconds": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "deltaTimeSeconds"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$id": "https://autonoma.ai/agent-lane-connection-id-array",
+  "title": "AgentLaneConnectionIdArray",
+  "description": "an array of lane connection IDs",
+  "type": "object",
+  "properties": {
+    "laneConnectionIds": {
+      "description": "the lane connection IDs",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "required": []
+}

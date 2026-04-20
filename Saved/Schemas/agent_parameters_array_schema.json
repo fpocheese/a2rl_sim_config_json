@@ -1,0 +1,17 @@
+{
+    "$id": "https://example.com/product.schema.json",
+    "title": "AgentParametersArray",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "agentParameters": {
+              "type": "array",
+              "items" : {
+                  "$ref": "agent_parameters_schema.json"
+              },
+              "minItems" : 1,
+              "maxItems" : 1000
+        }
+    },
+    "required": [ "agentParameters" ]
+}

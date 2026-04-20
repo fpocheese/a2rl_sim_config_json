@@ -1,0 +1,24 @@
+{
+  "$id": "https://autonoma.ai/agent-traffic-light-states",
+  "title": "AgentTrafficLightStates",
+  "description": "Timed states of the light group",
+  "type": "object",
+  "properties": {
+    "lightControls": {
+      "description": "List of light states with associated light ids",
+      "type": "array",
+      "items": {
+        "$ref": "agent_traffic_light_ids_states.json"
+      },
+      "minItems": 1
+    },
+    "duration": {
+      "description": "lights phase duration",
+      "type": "number"
+    }
+  },
+  "required": [
+    "lightControls",
+    "duration"
+  ]
+}

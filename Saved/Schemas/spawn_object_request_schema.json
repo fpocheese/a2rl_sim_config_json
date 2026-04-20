@@ -1,0 +1,65 @@
+{
+  "$id": "https://example.com/product.schema.json",
+  "title": "SpawnObject",
+  "description": "Request to spawn an object in the simulator.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The ID of the object to be spawned.",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of the object to be spawned.",
+      "type": "string"
+    },
+    "configuration": {
+      "description": "The configuration name to be applied to the object to be spawned.",
+      "type": "string"
+    },
+    "location": {
+      "description": "The location of the object to be spawned.",
+      "type": "array",
+      "items": {
+        "type": "number",
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "rotation": {
+      "description": "The rotation of the object to be spawned.",
+      "type": "array",
+      "items": {
+        "type": "number",
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "landmark": {
+      "description": "When present, the location is ignored and the object to be spawned will be placed at the landmark specified by this field.",
+      "type": "string"
+    },
+    "tags": {
+      "description": "Tags or metadata to be associated with the object to be spawned",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0,
+      "maxItems": 20
+    },
+    "payloads": {
+      "description": "JSON payloads specific to the object to be spawned.",
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "minItems": 0,
+      "maxItems": 20
+    }
+  },
+  "required": [ "id", "type"],
+  "oneOf": [
+    {"required": ["location"]},
+    {"required": ["landmark"]}
+  ]
+}

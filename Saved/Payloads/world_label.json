@@ -1,0 +1,15 @@
+{
+	"typeName": "WorldTextComponent",
+	"specName": "DefaultWorldTextComponent",
+	"bEnabled": true,
+	"body": {
+		"bUseObjectName": true,
+		"defaultString": "",
+		"fontSize": 34,
+		"offsetCm": {
+			"x": 0,
+			"y": 0,
+			"z": 150
+		}
+	}
+}

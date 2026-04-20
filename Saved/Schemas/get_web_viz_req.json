@@ -1,0 +1,25 @@
+{
+  "$id": "https://autonoma.ai/get-web-viz-req",
+  "title": "GetWebVizReq",
+  "description": "get metadata needed to show proper web ui across users",
+  "type": "object",
+  "properties": {
+    "currentTod": {
+      "description": "the current time of day setting",
+      "type": "string"
+    },
+    "currentEnv": {
+      "description": "name of the active environment",
+      "type": "string"
+    },
+    "weatherStates": {
+      "description": "the states of each weather type",
+      "type": "dict"
+    },
+    "agentGroupStates": {
+      "description": "the states of each agent spawner",
+      "type": "dict"
+    }
+  },
+  "required": []
+}
